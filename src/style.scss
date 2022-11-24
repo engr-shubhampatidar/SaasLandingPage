@@ -1,0 +1,20 @@
+$primary-color: #043873;
+$secondary-color: #4F9CF9;
+
+$lightYellow: #FFE492;
+$lightBlue: #A7CEFC;
+$light-color: #FFFFFF;
+$dark-color: #212529;
+
+.container {
+    padding: 0 10%;
+    height: max-content;
+
+    .section {
+        padding: 10% 0;
+
+        .subSection:not(:last-child) {
+            padding-bottom: 5%;
+        }
+    }
+}

@@ -1,0 +1,125 @@
+$primary-color: #043873;
+$secondary-color: #4F9CF9;
+
+$lightYellow: #FFE492;
+$lightBlue: #A7CEFC;
+$light-color: #FFFFFF;
+$dark-color: #212529;
+
+.testimonialContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #TestimonialUnderline {
+        background-image: url("../../Assets/PNG/SPUnderline.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0% 100%;
+    }
+
+    .section {
+
+        .Content {
+            display: flex;
+            justify-content: center;
+
+            h2 {
+                color: $dark-color;
+                font-size: 3rem;
+                font-weight: 700;
+                margin-bottom: 3rem;
+            }
+        }
+
+        .List {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 2.3em;
+
+            .TestimonialCard {
+                background-color: $secondary-color;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+
+                .Content {
+                    padding: 20px;
+
+                    p {
+                        color: $light-color;
+                        font-size: 0.8rem;
+                        font-weight: 400;
+                        padding: 1rem 0;
+                        text-align: left;
+                        line-height: 1.5rem;
+                        border-bottom: 2px solid $light-color;
+                    }
+                }
+
+                .Bio {
+                    padding: 30px 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .Profile {
+                        img {
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .Info {
+                        width: 75%;
+
+                        h4 {
+                            color: $light-color;
+                            font-size: 1rem;
+                            font-weight: 700;
+                            // margin-bottom: 0.5rem;
+                        }
+
+                        p {
+                            color: $light-color;
+                            font-size: 0.8rem;
+                            font-weight: 400;
+                            margin-bottom: 1rem;
+                            text-align: left;
+                        }
+                    }
+
+                }
+            }
+
+            .TestimonialCard:nth-child(1) {
+                background-color: $light-color;
+
+                .Content {
+                    p {
+                        color: $dark-color;
+                        border-bottom: 2px solid $dark-color;
+                    }
+
+                }
+
+                .Bio {
+                    .Info {
+                        h4 {
+                            color: $dark-color;
+                        }
+
+                        p {
+                            color: $dark-color;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

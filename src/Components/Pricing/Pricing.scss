@@ -1,0 +1,149 @@
+$primary-color: #043873;
+$secondary-color: #4F9CF9;
+
+$lightYellow: #FFE492;
+$lightBlue: #A7CEFC;
+$light-color: #FFFFFF;
+$dark-color: #212529;
+
+.pricingContainer {
+    .Content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            color: $dark-color;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: $dark-color;
+            font-size: 1rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+    }
+
+    .Pricing {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        gap: 4em;
+
+        .PricingCard {
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            height: 600px;
+            background-color: $light-color;
+            color: $dark-color;
+
+            h4 {
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+            }
+
+            h3 {
+                font-size: 2rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                font-size: 1rem;
+                font-weight: 500;
+                margin-bottom: 1rem;
+            }
+
+            button {
+                width: fit-content;
+                margin-top: 1rem;
+                padding: 10px 20px;
+                color: $dark-color ;
+                border: 1px solid $lightYellow;
+                border-radius: 3px;
+            }
+
+            .list {
+                p {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    margin-bottom: 0.5rem;
+                    display: flex;
+                }
+
+                p::before {
+                    content: url("../../Assets/SVG/Check.svg");
+                    padding-right: 5px;
+                }
+            }
+
+
+        }
+
+        /* .PricingCard:hover {
+            height: 650px;
+            background-color: $primary-color;
+            color: $light-color;
+            transition: height 300ms ease-in-out;
+
+            h3 {
+                color: $lightYellow;
+            }
+
+
+            button {
+                color: $light-color;
+                background-color: $secondary-color;
+                border: none;
+            }
+
+            .list {
+                p::before {
+                    filter: invert(100%);
+                }
+            }
+        } */
+
+        .PricingCard:nth-child(1) {
+            height: 600px;
+            background-color: $light-color;
+        }
+
+        .PricingCard:nth-child(2) {
+            height: 700px;
+            background-color: $primary-color;
+            color: $light-color;
+
+            h3 {
+                color: $lightYellow;
+            }
+
+            .list {
+                p::before {
+                    filter: invert(96%) sepia(417%) saturate(208%) hue-rotate(329deg) brightness(100%) contrast(100%);
+                    ;
+                }
+            }
+        }
+
+        .PricingCard:nth-child(3) {
+            height: 600px;
+            background-color: $light-color;
+        }
+
+    }
+
+    #PlanUnderline {
+        background-image: url("../../Assets/PNG/EUnderline.png");
+        background-repeat: no-repeat;
+        background-size: 140%;
+        background-position: 50% 210%;
+    }
+}
