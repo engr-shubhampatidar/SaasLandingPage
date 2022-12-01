@@ -6,7 +6,7 @@ export const Customize = () => {
   return (
     <div className="container customizationContainer">
       <div className="section">
-        <div className="Illustration">
+        <div className="primaryImages">
           <img src={Illustration} alt="Extension" />
         </div>
         <div className="Content">

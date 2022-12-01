@@ -9,12 +9,128 @@ $dark-color: #212529;
 .container {
     padding: 0 10%;
     height: max-content;
+    background-color: $light-color;
+    color: $dark-color;
+
+    h2 {
+        color: $light-color;
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        color: $light-color;
+        font-size: 1.3rem;
+        font-weight: 400;
+        // margin-bottom: 1rem;
+    }
+
+    button {
+        width: fit-content;
+        margin-top: 1rem;
+        padding: 10px 20px;
+        background-color: $secondary-color;
+        color: $light-color ;
+        border: none;
+        border-radius: 5px;
+    }
 
     .section {
         padding: 10% 0;
 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+
+
+        .Content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+
+        .primaryImages {
+            display: flex;
+
+            img {
+                height: auto;
+                max-width: 100%;
+            }
+        }
+
+        .secondaryImages {
+            display: flex;
+            justify-content: center;
+            margin: 0 5%;
+
+            img {
+                height: auto;
+                max-width: 100%;
+            }
+        }
+
         .subSection:not(:last-child) {
             padding-bottom: 5%;
         }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .container {
+        padding: 0 2%;
+
+        .section {
+            padding: 5% 0;
+
+            .subSection:not(:last-child) {
+                padding-bottom: 5%;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        h2 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+
+        .section {
+            grid-template-columns: 1fr;
+
+            .Content {
+                grid-row: 1;
+            }
+
+            .primaryImages {
+                margin: 5% 0;
+                max-width: 75%;
+            }
+
+            .secondaryImages {
+                margin: 5% 0;
+                max-width: 75%;
+            }
+
+            .Content {
+                align-items: center;
+                text-align: center;
+                margin: 5% 0;
+            }
+
+            .subSection:not(:last-child) {
+                padding-bottom: 5%;
+            }
+
+        }
+
     }
 }

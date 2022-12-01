@@ -22,7 +22,7 @@ export const YourData = () => {
           </p>
           <button>Read More</button>
         </div>
-        <div className="Illustration">
+        <div className="secondaryImages">
           <img src={LockIllustration} alt="Lock Illustration" />
         </div>
       </div>
@@ -32,10 +32,10 @@ export const YourData = () => {
             Our <span id="SponsorUnderline"> sponsors</span>
           </h2>
           <div className="ImageGrid">
-            <img src={Google} alt="Google" />
             <img src={Apple} alt="Apple" />
-            <img src={Slack} alt="Slack" />
             <img src={Microsoft} alt="Microsoft" />
+            <img src={Slack} alt="Slack" />
+            <img src={Google} alt="Google" />
           </div>
         </div>
       </div>

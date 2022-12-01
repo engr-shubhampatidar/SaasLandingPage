@@ -11,37 +11,14 @@ $dark-color: #212529;
     border-bottom: 0.5px solid #0000000a;
 
     .section {
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
         .Content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
 
             h2 {
                 color: $dark-color;
-                font-size: 3rem;
-                font-weight: 700;
-                margin-bottom: 1rem;
             }
 
             p {
                 color: $dark-color;
-                font-size: 1rem;
-                font-weight: 400;
-                margin-bottom: 1rem;
-            }
-
-            button {
-                width: fit-content;
-                margin-top: 10px;
-                padding: 10px 20px;
-                background-color: $secondary-color;
-                color: $light-color ;
-                border: none;
-                border-radius: 3px;
             }
 
         }
@@ -53,15 +30,17 @@ $dark-color: #212529;
             background-position: 0% 100%;
         }
 
-        .Illustration {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    }
 
-            img {
-                width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .customizationContainer {
+        .section {
+            .Content {
+                grid-row: 2;
             }
         }
     }
-
 }

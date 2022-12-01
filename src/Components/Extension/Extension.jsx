@@ -15,7 +15,7 @@ export const Extension = () => {
           </p>
           <button>Let's Go</button>
         </div>
-        <div className="Illustration">
+        <div className="primaryImages">
           <img src={Illustration} alt="Extension" />
         </div>
       </div>

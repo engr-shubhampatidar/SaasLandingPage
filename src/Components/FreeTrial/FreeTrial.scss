@@ -12,38 +12,30 @@ $dark-color: #212529;
     .Content {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         text-align: center;
 
-        h2 {
-            color: $light-color;
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-
         p {
-            color: $light-color;
             font-size: 1rem;
-            font-weight: 400;
-            margin-bottom: 1rem;
             padding: 10px;
-        }
-
-        button {
-            width: fit-content;
-            margin: 10px;
-            padding: 10px 20px;
-            background-color: $secondary-color;
-            color: $light-color ;
-            border: none;
-            border-radius: 3px;
         }
 
         .LogoList {
             display: flex;
             gap: 1em;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        .Content {
+            text-align: start;
+            align-items: flex-start;
+
+            .LogoList {
+                img {
+                    height: 40px;
+                }
+            }
         }
     }
 }

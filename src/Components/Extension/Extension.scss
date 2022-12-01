@@ -10,41 +10,6 @@ $dark-color: #212529;
     background-color: #043873;
 
     .section {
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
-        .Content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            h2 {
-                color: $light-color;
-                font-size: 3rem;
-                font-weight: 700;
-                margin-bottom: 1rem;
-            }
-
-            p {
-                color: $light-color;
-                font-size: 1rem;
-                font-weight: 400;
-                margin-bottom: 1rem;
-            }
-
-            button {
-                width: fit-content;
-                margin-top: 10px;
-                padding: 10px 20px;
-                background-color: $secondary-color;
-                color: $light-color ;
-                border: none;
-                border-radius: 3px;
-            }
-
-        }
-
         #ExtensionUnderLine {
             background-image: url("../../Assets/PNG/EUnderline.png");
             background-repeat: no-repeat;
@@ -52,15 +17,6 @@ $dark-color: #212529;
             background-position: 200% 160%;
         }
 
-        .Illustration {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            img {
-                width: 100%;
-            }
-        }
     }
 
 }

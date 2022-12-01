@@ -10,40 +10,4 @@ $dark-color: #212529;
     background-color: $primary-color;
     background-image: url("../../Assets/PNG/Lines.png");
     background-repeat: no-repeat;
-
-    .section {
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
-        .Content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            h2 {
-                color: $light-color;
-                font-size: 3rem;
-                font-weight: 700;
-                margin-bottom: 1rem;
-            }
-
-            p {
-                color: $light-color;
-                font-size: 1rem;
-                font-weight: 400;
-                margin-bottom: 1rem;
-            }
-        }
-
-        .Illustration {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            img {
-                width: 100%;
-            }
-        }
-    }
 }

@@ -12,8 +12,9 @@ export const HeroSection = () => {
             Project management software that enables your teams to collaborate,
             plan, analyze and manage everyday tasks
           </p>
+          <button>Try Whitespace Free</button>
         </div>
-        <div className="Illustration">
+        <div className="primaryImages">
           <img src={Illustration} alt="hero-illustration" border="0" />
         </div>
       </div>

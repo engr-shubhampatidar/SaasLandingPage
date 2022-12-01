@@ -7,35 +7,23 @@ $light-color: #FFFFFF;
 $dark-color: #212529;
 
 .yourDataContainer {
-    .FirstPanel {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
+    .section:not(:last-child) {
+        padding-bottom: 5%;
+    }
 
+    .section:not(:first-child) {
+        padding-top: 5%;
+    }
+
+    .FirstPanel {
         .Content {
             h2 {
                 color: $dark-color;
-                font-size: 3rem;
-                font-weight: 700;
-                margin-bottom: 1rem;
             }
 
             p {
                 color: $dark-color;
-                font-size: 1rem;
-                font-weight: 400;
-                margin-bottom: 1rem;
                 text-align: left;
-            }
-
-            button {
-                width: fit-content;
-                margin-top: 10px;
-                padding: 10px 20px;
-                background-color: $secondary-color;
-                color: $light-color ;
-                border: none;
-                border-radius: 3px;
             }
 
             #DataUnderline {
@@ -46,25 +34,23 @@ $dark-color: #212529;
             }
         }
 
-        .Illustration {
-            img {
-                width: 100%;
+        @media screen and (max-width: 768px) {
+            .Content {
+                grid-row: 2;
             }
         }
     }
 
     .SecondPanel {
+        display: flex;
+        justify-content: center;
+
         .Content {
-            display: flex;
-            flex-direction: column;
             align-items: center;
-            justify-content: center;
+            width: 100%;
 
             h2 {
                 color: $dark-color;
-                font-size: 3rem;
-                font-weight: 700;
-                margin-bottom: 1rem;
             }
 
             #SponsorUnderline {
@@ -78,10 +64,17 @@ $dark-color: #212529;
 
         .ImageGrid {
             width: 100%;
-            padding: 5% 0;
+            padding: 2% 0;
             display: flex;
             align-items: center;
             justify-content: space-evenly;
+        }
+
+        @media screen and (max-width: 768px) {
+            .ImageGrid {
+                flex-direction: column;
+                gap: 4em;
+            }
         }
     }
 

@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../../Assets/SVG/Logo.svg";
-import ArrowDown from "../../Assets/SVG/ArrowDown.svg";
+import ArrowDown from "../../Assets/SVG/Down Arrow.svg";
 import "../Navbar/Navbar.scss";
 
 export const Navbar = () => {

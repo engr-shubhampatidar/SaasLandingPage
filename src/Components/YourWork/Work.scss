@@ -7,9 +7,6 @@ $light-color: #FFFFFF;
 $dark-color: #212529;
 
 .workContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-color: $primary-color;
 
     background-image: url("../../Assets/PNG/Round.png");
@@ -17,35 +14,19 @@ $dark-color: #212529;
     background-size: 30%;
     background-position: 0 50%;
 
-    .Content {
+    .section {
         display: flex;
+    }
+
+    .Content {
+        color: $light-color;
         flex-direction: column;
         align-items: center;
-        color: $light-color;
+        margin: 0 10%;
 
-
-        h2 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
 
         p {
-            font-size: 1rem;
-            font-weight: 400;
-            padding: 0 20px;
-            margin-bottom: 1rem;
             text-align: center;
-        }
-
-        button {
-            width: fit-content;
-            margin-top: 1rem;
-            padding: 10px 20px;
-            background-color: $secondary-color;
-            color: $light-color ;
-            border: none;
-            border-radius: 3px;
         }
 
         #YouAreUnderline {
