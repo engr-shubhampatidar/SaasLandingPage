@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../../Assets/SVG/Logo.svg";
 import ArrowDown from "../../Assets/SVG/Down Arrow.svg";
+import Collapse from "../../Assets/PNG/Collapse.png";
 import "../Navbar/Navbar.scss";
 
 export const Navbar = () => {
@@ -32,6 +33,11 @@ export const Navbar = () => {
           <div className="button-group">
             <button>Login</button>
             <button>Try Whitespace free</button>
+          </div>
+          <div className="collapse">
+            <button>
+              <img src={Collapse} alt="whitespace" />
+            </button>
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@
 
     .section {
         padding: 2% 0;
+
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -26,7 +27,7 @@
                     gap: 2px;
 
                     p {
-                        font-size: 0.8rem;
+                        font-weight: 500;
                         margin-bottom: 0%;
                     }
 
@@ -34,6 +35,10 @@
                         width: 40px;
                     }
                 }
+            }
+
+            .collapse {
+                display: none;
             }
 
             .button-group {
@@ -44,7 +49,6 @@
 
 
                 button {
-                    font-size: 10px;
                     margin-top: 0;
                 }
 
@@ -65,10 +69,38 @@
 
 }
 
+@media screen and (max-width: 1152px) {
+    .navContainer {
+        .section {
+            .menu {
+                .items {
+                    display: none;
+                }
+
+                .collapse {
+                    display: flex;
+
+                    button {
+                        background-color: transparent;
+                        border: none;
+                        color: #FFFFFF;
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    img {
+                        width: 30px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
     .navContainer {
         .section {
-
             .menu {
                 .items {
                     display: none;

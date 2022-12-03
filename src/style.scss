@@ -14,26 +14,33 @@ $dark-color: #212529;
 
     h2 {
         color: $light-color;
-        font-size: 4rem;
         font-weight: 700;
+        font-size: 4rem;
+        line-height: 4.183rem;
+        letter-spacing: -0.02em;
+
         margin-bottom: 1rem;
     }
 
     p {
         color: $light-color;
-        font-size: 1.3rem;
         font-weight: 400;
-        // margin-bottom: 1rem;
+        font-size: 1.125rem;
+        line-height: 1.875rem;
+        letter-spacing: -0.02em;
     }
 
     button {
-        width: fit-content;
-        margin-top: 1rem;
-        padding: 10px 20px;
         background-color: $secondary-color;
         color: $light-color ;
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 1.438rem;
+        width: fit-content;
+        padding: 20px;
         border: none;
-        border-radius: 5px;
+        border-radius: 8px;
+        margin-top: 2rem;
     }
 
     .section {
@@ -53,6 +60,7 @@ $dark-color: #212529;
 
         .primaryImages {
             display: flex;
+            justify-content: space-evenly;
 
             img {
                 height: auto;
@@ -92,16 +100,27 @@ $dark-color: #212529;
     }
 }
 
+@media screen and (max-width: 1152px) {
+    .container {
+        .section {
+            .primaryImages {}
+        }
+    }
+
+}
+
+
+
 @media screen and (max-width: 768px) {
     .container {
         h2 {
-            font-size: 3rem;
+            font-size: 3.375rem;
+            line-height: 4.063rem;
         }
 
-        p {
-            font-size: 1rem;
+        button {
+            padding: 20px 40px;
         }
-
 
         .section {
             grid-template-columns: 1fr;
@@ -112,7 +131,6 @@ $dark-color: #212529;
 
             .primaryImages {
                 margin: 5% 0;
-                max-width: 75%;
             }
 
             .secondaryImages {
@@ -132,5 +150,16 @@ $dark-color: #212529;
 
         }
 
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        h2 {
+            font-size: 2.25rem;
+            line-height: 2.75rem;
+        }
+
+        .section {}
     }
 }
